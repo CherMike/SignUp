@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+    <RevitAddIns>
+      <AddIn Type="Application">
+	<Name>SignUp</Name>
+        <Assembly>SignUp.dll</Assembly>
+        <AddInId>604b1052-f742-4951-8576-c261d1993111</AddInId>
+        <FullClassName>RevitAdd_in.AddPanel</FullClassName>
+	      <Text>AddRibbon</Text>
+        <VendorId>MikeChe</VendorId>
+        <VendorDescription>Home</VendorDescription>
+      </AddIn>
+    </RevitAddIns>
