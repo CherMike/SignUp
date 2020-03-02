@@ -13,7 +13,7 @@ namespace RevitAdd_in
         public Result OnStartup(UIControlledApplication application)
         {
             // Add a new ribbon panel
-            RibbonPanel ribbonPanel = application.CreateRibbonPanel("Тестовая панель");
+            RibbonPanel ribbonPanel = application.CreateRibbonPanel("Оформление листов");
 
             // Create a push button to trigger a command add it to the ribbon panel.
             string thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
@@ -27,9 +27,9 @@ namespace RevitAdd_in
             pushButton.ToolTip = "Скопировать фамилии подписантов в экземпляры штампа";
 
             // b) large bitmap
-            //Uri uriImage = new Uri("Sign_Icon.png");
-            //BitmapImage largeImage = new BitmapImage(uriImage);
-            //pushButton.LargeImage = largeImage;
+            Uri uriImage = new Uri(@"C:\ProgramData\Autodesk\Revit\Addins\2019\Sign_Icon.png");
+            BitmapImage largeImage = new BitmapImage(uriImage);
+            pushButton.LargeImage = largeImage;
 
          return Result.Succeeded;
       }
@@ -56,7 +56,7 @@ namespace RevitAdd_in
             sign["ADSK_Штамп Строка 5 фамилия"] = "";
             sign["ADSK_Штамп Строка 6 фамилия"] = "";
             
-            var nameOfForm = new[] { "Форма 3", "Форма 5", "Форма 6" };
+            var nameOfForm = new[] { "Форма 3", "Форма 5", "Форма 6", "Форма Р" };
 
             var dataSheet = new Dictionary<string, Dictionary<string, string>>();
 
